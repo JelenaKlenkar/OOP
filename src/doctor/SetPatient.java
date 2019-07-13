@@ -11,9 +11,23 @@ public class SetPatient {
 		patient.setSupplementalHealthInsurance(true);
 		patient.setNumberOfHealthInsuranceCard(123456789);
 
-		// print the first name of the patient
+		// print out the first name of the patient
 
 		System.out.println(patient.getFirstName());
+
+		// create second instance of the class
+
+		Patient p = new Patient();
+
+		p.setId(2);
+		p.setFirstName("Nina");
+		p.setLastName("Badriæ");
+		p.setSupplementalHealthInsurance(true);
+		p.setNumberOfHealthInsuranceCard(235478123);
+
+		// print out if the patient has supplemental health insurance
+
+		System.out.println(p.isSupplementalHealthInsurance());
 	}
 
 }

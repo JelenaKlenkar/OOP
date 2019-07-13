@@ -9,6 +9,17 @@ public class SetTreatment {
 
 		treatment.setDiagnosis("Gastritis");
 		treatment.setMedicine("Controloc");
+
+		// create second instance of the class
+
+		Treatment t = new Treatment();
+
+		t.setDiagnosis("Cistitis");
+		t.setMedicine("Nolicin");
+
+		// print out the medicine
+
+		System.out.println(t.getMedicine());
 	}
 
 }
