@@ -10,8 +10,9 @@ public class Dog extends DogOwner {
 
 	public void setName(String name) {
 		this.name = name;
-		
-		takeForWalk();
+		// polymorphism
+
+		super.takeForWalk();
 	}
 
 	@Override
