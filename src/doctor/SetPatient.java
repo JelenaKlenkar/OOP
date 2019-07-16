@@ -21,7 +21,7 @@ public class SetPatient {
 
 		p.setId(2);
 		p.setFirstName("Nina");
-		p.setLastName("Badriæ");
+		p.setLastName("BadriÄ‡");
 		p.setSupplementalHealthInsurance(true);
 		p.setNumberOfHealthInsuranceCard(235478123);
 

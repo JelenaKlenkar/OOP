@@ -20,7 +20,7 @@ public class SetNurse {
 		Nurse n = new Nurse();
 
 		n.setFirstName("Iva");
-		n.setLastName("Iviæ");
+		n.setLastName("IviÄ‡");
 		n.setPersonalIdentificationNumber(24567891);
 
 		// print out first and last name of nurse
