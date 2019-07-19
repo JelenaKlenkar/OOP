@@ -1,6 +1,6 @@
 package walkingTheDog;
 
-public class Dog extends DogOwner {
+public class Dog  {
 
 	private String name;
 
@@ -10,9 +10,7 @@ public class Dog extends DogOwner {
 
 	public void setName(String name) {
 		this.name = name;
-		// polymorphism
-
-		super.takeForWalk();
+		
 	}
 
 	@Override

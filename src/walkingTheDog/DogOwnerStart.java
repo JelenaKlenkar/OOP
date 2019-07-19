@@ -9,7 +9,7 @@ public class DogOwnerStart {
 
 		owner.setId(1);
 		owner.setFirstName("Marko");
-		owner.setLastName("Markoviæ");
+		owner.setLastName("MarkoviÄ‡");
 	}
 
 }
