@@ -44,6 +44,7 @@ public class Start {
 	private void editPerson() {
 		listPerson();
 		Person p = persons.get(ordinalNumberOfPerson() - 1);
+		System.out.println(p);
 		p = setValues(p);
 
 	}
@@ -81,13 +82,9 @@ public class Start {
 	}
 
 	private Person setValues(Person p) {
-		System.out.println("First name is: " + p.getFirstName());
 		p.setFirstName(Methods.enterString("Enter first name: "));
-		System.out.println("Last name is: " + p.getLastName());
 		p.setLastName(Methods.enterString("Enter last name: "));
-		System.out.println("Height is: " + p.getHeight());
 		p.setHeight(Methods.enterInteger("Enter height: "));
-		System.out.println("Date of birth is: " + p.getDateOfBirth());
 		p.setDateOfBirth(Methods.enterDate("Enter date of birth: "));
 		return p;
 	}
