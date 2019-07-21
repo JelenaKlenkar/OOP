@@ -44,20 +44,19 @@ public class Methods {
 
 	public static Date enterDate(String message) {
 		SimpleDateFormat df = new SimpleDateFormat(DATE_FORMAT);
-		int data;
-		while(true) {
-		try {
-			Scanner s3=new Scanner(System.in);
-			data=s3.nextInt();
-			return df.parse(message);
-			
-			
-		}catch(Exception e){
-			System.out.println(
-						"Input must be in format: " + DATE_FORMAT 
-						+ "\nExample of todays date:" + df.format(new Date()));
+		String data;
+		while (true) {
+			try {
+				Scanner s3 = new Scanner(System.in);
+				System.out.println(message);
+				data = s3.next();
+				return df.parse(data);
+
+			} catch (Exception e) {
+				System.out.println("Input must be in format: " + DATE_FORMAT + "\nExample of todays date:"
+						+ df.format(new Date()));
+			}
+
 		}
-		
-	}
 	}
 }

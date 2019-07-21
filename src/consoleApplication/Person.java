@@ -56,4 +56,9 @@ public class Person {
 		this.dateOfBirth = dateOfBirth;
 	}
 
+	@Override
+	public String toString() {
+		return getFirstName() + " " + getLastName();
+	}
+
 }
