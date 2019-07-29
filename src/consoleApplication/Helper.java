@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-public class Methods {
+public class Helper {
 	public static final String DATE_FORMAT = "dd.MM.yyyy.";
 
 	public static String enterString(String message) {

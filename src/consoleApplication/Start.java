@@ -12,7 +12,7 @@ public class Start {
 
 		main_loop: while (true) {
 			menu();
-			switch (Methods.enterInteger("Enter number of action")) {
+			switch (Helper.enterInteger("Enter number of action")) {
 			case 5:
 				break main_loop;
 			case 1:
@@ -82,10 +82,10 @@ public class Start {
 	}
 
 	private Person setValues(Person p) {
-		p.setFirstName(Methods.enterString("Enter first name: "));
-		p.setLastName(Methods.enterString("Enter last name: "));
-		p.setHeight(Methods.enterInteger("Enter height: "));
-		p.setDateOfBirth(Methods.enterDate("Enter date of birth: "));
+		p.setFirstName(Helper.enterString("Enter first name: "));
+		p.setLastName(Helper.enterString("Enter last name: "));
+		p.setHeight(Helper.enterInteger("Enter height: "));
+		p.setDateOfBirth(Helper.enterDate("Enter date of birth: "));
 		return p;
 	}
 
